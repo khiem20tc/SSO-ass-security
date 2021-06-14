@@ -1,0 +1,18 @@
+# Provider
+* Setup:
+- Use node version v12.19.0:
++ nvm install 12.19.0
++ nvm use 12.19.0
+- Cd srcs/provider
+- Node index.js
+* Usage:
+- Check connection: 'http://localhost:9866/.well-known/openid-configuration'
+- Start authen: 'http://localhost:9866/auth?client_id=foo&response_type=id_token&redirect_uri=https%3A%2F%2Fjwt.io&scope=openid&nonce=foobar'
+- Sign-in: 
+username: khiem@example.com
+pwd: khiem
+
+# Client
+- Cd srcs/provider
+- Node server.js
+- Start: 'http://localhost:8080/'
